@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="476.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GarbageCleaner.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="503.0" fitWidth="712.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@main_background.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="scanNow" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="393.0" layoutY="40.0" onAction="#handleButtonAction" style="-fx-background-color: #1eaa2b;" text="Scan Now" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Microsoft Yi Baiti" size="55.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="clean" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="393.0" layoutY="188.0" onAction="#handleButtonAction" prefHeight="104.0" prefWidth="275.0" style="-fx-background-color: #ab9913;" text="Clean" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Microsoft Yi Baiti" size="55.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="exit" buttonType="RAISED" layoutX="393.0" layoutY="334.0" onAction="#handleButtonAction" prefHeight="104.0" prefWidth="275.0" style="-fx-background-color: #a70000;" text="Exit" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Microsoft Yi Baiti" size="55.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="label" layoutX="108.0" layoutY="107.0" onDragDetected="#handleButtonAction" prefHeight="75.0" prefWidth="275.0" textFill="WHITE">
+         <font>
+            <Font name="Microsoft Yi Baiti" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="94.0" layoutX="14.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@yellow_arrow.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="listView" editable="true" fixedCellSize="0.0" layoutX="27.0" layoutY="192.0" prefHeight="249.0" prefWidth="334.0" />
+   </children>
+</AnchorPane>
